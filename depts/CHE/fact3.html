@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>User Information and Specialization Container</title>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+<!-- jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Bootstrap JS -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<style>
+    /* Custom CSS */
+    .header {
+      background-color: #fff;
+      background-size: cover; /* Set the background image */
+      padding: 5px 0;
+      text-align: center;
+      color: black;
+      height: 115px;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .social-icons {
+      display: flex;
+    }
+    .social-icons-container {
+      background-color: brown; /* Change the color as needed */
+      padding: 10px;
+      border-radius: 5px;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      height:5vh;
+    }
+    .social-icons a {
+      margin-left: 0 5px;
+    }
+    .left-icons {
+      margin-right: auto; /* Push icons to the left */
+    }
+    .right-icons {
+      margin-left: auto; /* Push icons to the right */
+    }
+    .logo-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .logo-container img {
+      height: 100px;
+      margin-left: 8px;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 10px;
+    }
+    .logo img {
+      padding-bottom: 1px;
+      padding-top: 60px;
+      padding-left: 240px;
+      height: 70px;
+    }
+    .navbar-brand img {
+      width: 40px; /* Adjust the width of the navbar image */
+      height: 40px;
+      position: relative;
+    }
+    .navbar-brand {
+       display:flex;
+       align-items: center;
+       margin-left:1px;
+       margin-right: 12px;
+       padding:1px;
+       
+    }
+    .navbar-brand, .navbar-nav .nav-link{
+      color: red; 
+      
+    }
+    .navbar-brand .department-text {
+    color: black;
+    font-weight: bold;
+  }
+  
+  /* Optional: Add hover effect for navigation items */
+  .navbar-nav .nav-item .nav-link:hover {
+    color: violet; /* Change to desired hover color */
+  }
+  
+  /* Optional: Add active link styling */
+  .navbar-nav .nav-item .nav-link.active {
+    font-weight: bold; /* Change to desired active link styling */
+  }
+    .navbar-nav .nav-item .nav-link {
+      color: black;
+      font-size: 15px;
+      
+      padding:1px;
+      margin-right: 1px;
+    }
+    .navbar-nav .nav-link i {
+      margin-right: 5px;
+      color:black;
+    }
+    .navbar-toggler-icon {
+      color: white; /* Change the color of the navbar toggler icon */
+    }
+    .navbar-toggler:focus, .navbar-toggler:active {
+      outline: none;
+    }
+    .navbar-nav {
+      text-align: center;
+    }
+    .nav-item {
+      padding: 10px;
+      color: red;
+    }
+    .home .nav-link{
+      color:yellow;
+    }
+    /* Media Query for responsiveness */
+    @media (max-width: 768px) {
+      .nav-item {
+        padding: 2px 2px;
+      }
+      .navbar-nav {
+        display: none;
+      }
+      .navbar-nav.show {
+        display: block;
+      }
+    }
+    #navbar {
+      width: 100%;
+      background-image: url('9.jpg');
+      background-size: cover;
+      
+      /* Ensure the navbar is above other elements */
+    }
+    
+    section {
+      padding: 100px 0;
+      background-repeat: no-repeat;
+      background-size:100% 100%;
+      
+      align-items: center;
+      background-image: url('bc.jpg');
+      
+    }
+    .max-width {
+      max-width: 1300px;
+      padding: 0 80px;
+      margin: auto;
+    }
+    span {
+      color: #FF0000 ;
+    }
+    .submit-btn {
+      width: 125px;
+      height: 35px;
+      border-width: 1px;
+      border-radius: 30px;
+      border-style: solid;
+      border-color: blue;
+      background-color: yellow;
+      color: red;
+    }
+    .submit-btn:hover {
+      transform: scale(1.1);
+      background: #2ecc71;
+      transition: 0.4s;
+    }
+    .social a:hover {
+      transform: scale(1.1);
+      background: #2ecc71;
+      transition: 0.4s;
+    }
+    .image img {
+      margin-left:889px;
+      margin-top:1%;
+    }
+    table {
+      border-collapse: collapse; /* Collapse table borders */
+      width: 25%; /* Set table width */
+      float: left; /* Float the table to the left */
+      margin-left:78px;
+    }
+    th, td {
+      border: 1px solid black; /* Add border to cells */
+      padding: 8px; /* Add padding to cells */
+      text-align: left; /* Align text to the left */
+    }
+    td {
+      width: 150px; /* Set width for table cells */
+      background-color: skyblue;
+      cursor: pointer; /* Change cursor to pointer when hovering over cells */
+    }
+    td:hover {
+      background-color: red;
+    }
+    #aboutContent {
+      margin-left: 450px; /* Add margin to separate from the table */
+      display: none;
+    }
+    #aboutacademic {
+      margin-left: 450px; /* Add margin to separate from the table */
+      display: none;
+    }
+    .container-border {
+      border: 2px solid black;
+      background: linear-gradient( skyblue, green);
+      padding: 20px;
+    }
+    .carousel-container {
+      text-align: center;
+      margin-top: 50px;
+      overflow: hidden; /* Ensure the overflow is hidden */
+    }
+  
+    .carousel-wrapper {
+      display: flex;
+      animation: moveCarousel 25s linear infinite; /* Animation for moving carousel */
+    }
+  
+    .carousel {
+      border-radius: 50%;
+      width: 200px;
+      height: 200px;
+      margin-bottom: 20px;
+      object-fit: cover;
+      border: 2px solid blue;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      margin-right: 20px; /* Add margin between carousel items */
+    }
+  
+    .info {
+      margin-bottom: 20px;
+    }
+  
+    .col-4 {
+      width: 33.33%;
+      float: left;
+    }
+  
+    
+  
+    @keyframes moveCarousel {
+      0% { transform: translateX(0); }
+      16.666% { transform: translateX(0); } /* Image 1 visible for 5 seconds (1/6 of 30 seconds) */
+      20% { transform: translateX(0); } /* Pause for 2 seconds */
+      33.333% { transform: translateX(-100%); } /* Image 1 transition out, Image 2 transition in */
+      50% { transform: translateX(-100%); } /* Image 2 visible for 5 seconds */
+      54% { transform: translateX(-100%); } /* Pause for 2 seconds */
+      66.666% { transform: translateX(-200%); } /* Image 2 transition out, Image 3 transition in */
+      83.333% { transform: translateX(-200%); } /* Image 3 visible for 5 seconds */
+      87% { transform: translateX(-200%); } /* Pause for 2 seconds */
+      100% { transform: translateX(0); } /* Image 3 transition out, Image 1 transition in */
+    }
+    footer {
+              background-color: red; /* Set the background color of the footer */
+              text-align: center; /* Center-align the text */
+              padding: 5px; /* Add some padding for better spacing */
+              color: white; /* Set text color to white for better contrast */
+          }
+          
+   
+  
+  </style>
+<style>
+  /* User Information Container Styles */
+  .user-container {
+    display: flex;
+    align-items: center;
+    width: 95%;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+  }
+
+  .user-image {
+    flex-shrink: 0;
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+  }
+
+  .user-info {
+    flex-grow: 1;
+  }
+
+  .user-info p {
+    margin: 5px 0;
+  }
+
+  /* Container Styles */
+  .containerfac {
+    display: flex;
+    align-items: center;
+    width: 90%;
+    
+    margin-left: 45px;
+    cursor: pointer;
+    height: 7vh;
+  }
+
+  .play-button {
+    flex-shrink: 0;
+    width: 50px;
+    height: 50px;
+    color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+    background-color: #fff;
+  }
+
+  .info {
+    flex-grow: 1;
+  }
+
+  .hidden {
+    display: none;
+  }
+  
+  #experienceInfo, 
+  #subjectsTaughtInfo, 
+  #fdpInfo, 
+  #researchAreasInfo, 
+  #professionalBodiesInfo, 
+  #extraResponsibilitiesInfo {
+     margin-left: 50px;
+  }
+  .maincontainer{
+     background-color:whitesmoke;
+     border:1px solid #fff;
+  }
+</style>
+</head>
+<body>
+    <div class="social-icons-container">
+        <div class="social-icons left-icons">
+          <a href="#"><i class="fa-solid fa-phone">+91-123-456</i></a>
+          
+        </div>
+        <div class="social-icons right-icons">
+          <a href="#"><i class="fa fa-linkedin"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+        </div>
+      </div>
+      <div class="header">
+        <div class="logo-container">
+          <img src="Logonew.png" alt="Logo"> <!-- Replace "lo.png" with the path to your logo image -->
+          <span>
+            <h3>Rajiv Gandhi University of Knowledge Technologies.<br>RGUKT Nuzvid Campus<br>Indian Institute of Information Technology</h3>
+          </span>
+          <div class="campus-info"><h5>(Chemical Department)</h5></div>
+        </div>
+      </div>
+      <nav class="navbar navbar-expand-lg navbar-dark" id="navbar">
+        <div class="container">
+          <div class="row w-100">
+            <div class="col-md-6">
+              <a class="navbar-brand" href="#">
+                <img src="Logonew.png" alt="Navbar Image">
+                <span style="color: black;">Chemical Department</span>
+              </a>
+            </div>
+            <div class="col-md-6">
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            </div>
+          </div>
+      
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+              
+              
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="about.html" id="navbarDropdownHome" role="button" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
+                  <i class="fa fa-home"></i> Home
+                </a>
+                
+              </li>
+              
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownAbout" role="button" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
+                  <i class="fa fa-info-circle"></i> About US
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownAbout">
+                  <a class="dropdown-item" href="about.html">About HOD</a>
+                  <a class="dropdown-item" href="#">About Department</a>
+                  <a class="dropdown-item" href="messagehod.html">message From HOD</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownAbout" role="button" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
+                  <i class="fa fa-info-circle"></i> About US
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownAbout">
+                  <a class="dropdown-item" href="about.html">About HOD</a>
+                  <a class="dropdown-item" href="#">About Department</a>
+                  <a class="dropdown-item" href="#">message From HOD</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      
+      
+      
+      
+<!-- User Information Container -->
+<div class="user-container">
+  <img src="fact1 (2).jpg" alt="User Image" class="user-image">
+  <div class="user-info">
+    <p>Name: John Doe</p>
+    <p>Email: johndoe@example.com</p>
+    <p>Phone: +1234567890</p>
+    <p>Profession: Software Engineer</p>
+  </div>
+</div>
+<br>
+<!-- Experience Container -->
+<div class="maincontainer">
+<div class="containerfac" onclick="toggleInfo('experienceInfo')">
+  <div class="play-button">▶</div>
+  <div class="info">
+    <p>Experience</p>
+  </div>
+</div>
+<div id="experienceInfo" class="hidden">
+  <ul>
+    <li>Previous Work Experience</li>
+  </ul>
+</div>
+
+<!-- Subjects Taught Container -->
+<div class="containerfac" onclick="toggleInfo('subjectsTaughtInfo')">
+  <div class="play-button">▶</div>
+  <div class="info">
+    <p>Subjects Taught</p>
+  </div>
+</div>
+
+<div id="subjectsTaughtInfo" class="hidden">
+  <ul>
+    <li>Subjects Taught</li>
+  </ul>
+</div>
+
+<!-- Faculty Development Program (FDP) Container -->
+<div class="containerfac" onclick="toggleInfo('fdpInfo')">
+  <div class="play-button">▶</div>
+  <div class="info">
+    <p>Faculty Development Program (FDP)</p>
+  </div>
+</div>
+
+<div id="fdpInfo" class="hidden">
+  <ul>
+    <li>FDP Details</li>
+  </ul>
+</div>
+
+<!-- Research Areas Container -->
+<div class="containerfac" onclick="toggleInfo('researchAreasInfo')">
+  <div class="play-button">▶</div>
+  <div class="info">
+    <p>Research Areas</p>
+  </div>
+</div>
+
+<div id="researchAreasInfo" class="hidden">
+  <ul>
+    <li>Research Areas</li>
+  </ul>
+</div>
+
+<!-- Member of Professional Bodies Container -->
+<div class="containerfac" onclick="toggleInfo('professionalBodiesInfo')">
+  <div class="play-button">▶</div>
+  <div class="info">
+    <p>Member of Professional Bodies</p>
+  </div>
+</div>
+
+<div id="professionalBodiesInfo" class="hidden">
+  <ul>
+    <li>Professional Bodies</li>
+  </ul>
+</div>
+
+<!-- Extra Responsibilities Container -->
+<div class="containerfac" onclick="toggleInfo('extraResponsibilitiesInfo')">
+  <div class="play-button">▶</div>
+  <div class="info">
+    <p>Extra Responsibilities</p>
+  </div>
+</div>
+
+<div id="extraResponsibilitiesInfo" class="hidden">
+  <ul>
+    <li>Extra Responsibilities</li>
+  </ul>
+</div>
+</div>
+<footer>
+  
+    <select>
+        <option value="all">All Languages</option>
+        <option value="english">English</option>
+        <option value="spanish">Spanish</option>
+        <option value="french">French</option>
+        <!-- Add more options as needed -->
+    </select>
+    
+
+<p>&copy; 2024 Your Company. All rights reserved.</p>
+</footer>
+<script>
+  function toggleInfo(id) {
+    var additionalInfo = document.getElementById(id);
+    additionalInfo.classList.toggle("hidden");
+  }
+</script>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script>
+  var typed = new Typed(".typing", {
+    strings: ["ChemicalDepartment", "Indian Institute of Information Technology", "Rajiv Gandhi University of Knowledge Technologies.", "NUZVID CAMPUS"],
+    typeSpeed: 100,
+    backSpeed: 60,
+    loop: true
+  });
+ 
+</script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<script>
+  // JavaScript for toggling navbar on small screens
+  $('.navbar-toggler').on('click', function() {
+    $('.navbar-nav').toggleClass('show');
+  });
+  // JavaScript functionality
+  $(document).ready(function() {
+    $(".close-icon").click(function() {
+      $('.navbar-collapse').collapse('hide');
+    });
+  });
+
+</script>
+<script>
+  function toggleAbout() {
+    var aboutContent = document.getElementById('aboutContent');
+    aboutContent.style.display = (aboutContent.style.display === 'none') ? 'block' : 'none';
+  }
+  function toggleacademic() {
+    var aboutacademic = document.getElementById('aboutacademic');
+    aboutacademic.style.display = (aboutacademic.style.display === 'none') ? 'block' : 'none';
+  }
+</script>
+<script>
+  
+
+  document.getElementById("navbarDropdownHome").addEventListener("dblclick", function() {
+  window.location.href = "about.html";
+});
+  
+  
+  </script>
+</body>
+</html>

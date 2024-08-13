@@ -1,0 +1,20 @@
+.buttons-container {
+    display: flex;
+    justify-content: center; /* Center the buttons horizontally */
+    margin-bottom: 20px; /* Add space below the buttons */
+  }
+  
+  .buttons-container button {
+    flex: 1; /* Each button occupies equal space */
+    margin: 0 5px; /* Add spacing between buttons */
+    background-color: red; /* Set the background color of the buttons */
+    color:red; /* Set the text color to white */
+    border: none; /* Remove button border */
+    padding: 10px 20px; /* Add padding */
+    cursor: pointer; /* Change cursor to pointer on hover */
+  }
+  
+  .buttons-container button:hover {
+    background-color: #0056b3; /* Change background color on hover */
+  }
+  

@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+       <!-- Slick Carousel CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    
+    
+
+        <!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+    </head>
+
+    <style>
+        .body,html{
+        margin:0;
+        padding:0;
+        height:100vh;
+        
+       
+    }
+    .bg-container{
+        
+        height:100vh;
+        width:100%;
+       
+    
+    }
+    
+    .style-1{
+        color:#fff;
+        padding:10px;
+        font-size:14px;
+        font-weight: 400;
+        font-family:"Work Sans",sans-serif;
+        cursor : pointer;
+        line-height: 2.3;
+        display: inline-block;
+        padding-left: 5px;
+    }
+     /* Main container */
+     .main-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height:50px;
+        padding: 10px;
+        background-color:#d83643;
+    }
+    
+    /* Left container (Mail ID and Phone Number) */
+    .left-container {
+        display: flex;
+        align-items: center;
+        margin-left:15px;
+    }
+    
+    /* Center container (Search Bar) */
+    .center-container {
+        flex-grow: 1;
+        text-align: center;
+    }
+    
+    /* Right container (Social Icons) */
+    .right-container{
+        display: flex;
+        margin-left:60px;
+        align-items: center;
+        margin-left:90px;
+    }
+    
+    /* Style for the search bar */
+    .search-bar {
+        width: 70%; /* Adjust the width as needed */
+        padding: 8px;
+        
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+    
+    /* Style for the social icons */
+    .social-icons {
+        font-size: 18px; /* Adjust the font size as needed */
+        margin-right: 20px; /* Adjust the margin between icons */
+        color: white; /* Adjust the color of the icons */
+    }
+    
+    
+    .logo-department-container {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+        height: 100px;
+        background-color: #fff;
+        margin-left: 30px;
+    }
+    
+    .dept {
+        width: 500px;
+    }
+    
+    .h-1 {
+        padding-right: 40px;
+        font-size: 18px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .h-2 {
+        font-weight: 200;
+        font-size: 14px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    /* Logo styles */
+    .logo {
+        max-width: 80px;
+        margin-right: 10px;
+        height: 75px;
+        border: none;
+        box-shadow: none;
+        vertical-align: middle;
+    }
+    
+    .vertical-line {
+        height: 80px;
+        width: 4px;
+        background-color: #ccc;
+        margin: 0 10px;
+    }
+    
+    /* Navbar styles */
+    .navbar {
+        background-color: #fff;
+        padding: 10px;
+        margin-right: 30px;
+        
+    }
+    
+    .navbar-toggler {
+        border: none;
+    }
+    
+    /* Navbar link styles */
+    .navbar-nav .nav-item .nav-link {
+        color: #004495;
+        font-weight: 900;
+        font-size: 14px;
+        margin-left:40px;
+        padding: 10px;
+        border-radius: 4px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .navbar-nav .nav-item .nav-link:hover,
+    .navbar-nav .nav-item .nav-link:focus {
+        background-color: #f8f9fa;
+    }
+
+    .img{
+        width: 100%;
+    }
+    
+    .text-overlay {
+            position: absolute;
+            top: 50%;
+            left: 10%;
+            transform: translate(-50%, -50%);
+            color: white;
+            text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.8);
+            text-align: center;
+            
+        }
+
+.text-overlay h2 {
+            margin-top: -20px;
+            font-weight: bold; /* Adjust the value to move the content upwards */
+        }
+
+        .home1-link {
+            color: black; /* Change the text color to red */
+            font-size: 15px; /* Change the text size to 18px */
+            text-align:center; /* Align the text to the right */
+            display: block; /* Make it a block-level element to control width and margin */
+            margin-top: 10px;
+            margin-right: 1000px; /* Adjust the top margin as needed */
+        }
+
+.divider1 {
+    background-color: #d3d3d3; /* Light grey color for the line */
+            height: 1px; /* Height of the line */
+            width: 100%; /* Adjust the width of the line */
+            margin-top: 20px; /* Adjust the top margin to create space between the text and the line */
+            margin-bottom: 15px; /* Add some space between the text and the line */
+        }
+        .Latest-News {
+            font-size: 35px; /* Adjust the font size for the heading */
+            margin-top: 20px; /* Adjust the top margin for space between the line and heading */
+            color: #333;
+            margin-left: 105px;
+            font-weight: bold; /* Change the text color as needed */
+        }
+
+        .nav-options {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .nav-options li {
+            margin-bottom: 10px;
+        }
+
+        .nav-options a {
+            text-decoration: none;
+            color: #333;
+            font-size: 18px;
+            display: block;
+        }
+
+        .nav-options a:hover {
+            color: #FF0000; /* Change the text color on hover */
+        }
+        .right-containerA {
+            width: 35%; /* Adjust the width of the main containers */
+        }
+        .right-containerA {
+            background-color: #f0f0f0; /* Grey background color */
+            padding: 15px; /* Add padding for spacing */
+            border-radius: 5px;
+            margin-left: auto;
+            margin-top: auto; /* Add border-radius for rounded corners */
+        }
+
+        .Quick-Links{
+            margin-bottom: 20px;
+        }
+
+
+        .footer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px; /* Stack the boxes vertically */
+}
+
+.footer-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.grey-box {
+    height: 400px; /* Adjust the height of the grey box */
+    background-color:#3a3a3b;
+    display: flex;
+    
+    justify-content: space-between; /* Space between the three containers */
+    align-items: center;
+    padding: 20px; /* Add padding for space */
+}
+
+.red-box {
+    height: 50px; /* Adjust the height of the red box */
+    background-color: #d83643;
+    display: flex;
+    justify-content: space-between; /* Add space between text and copyright */
+    align-items: center;
+}
+
+.footer-text,
+.copyright-text {
+    color: white;
+    font-size: 18px; /* Adjust the font size as needed */
+    margin: 0; /* Remove default margin */
+    padding-left: 20px; /* Add padding to start from the left */
+}
+
+.about-section {
+    color: #98989f; /* Text color */
+    padding: 20px; /* Add padding for space */
+}
+
+.left-container-2 {
+    color: #98989f; /* Text color */
+    display:flex;
+    flex-direction: column;
+    width:400px;
+}
+
+.footer-about{
+    color:#fff;
+    font-size:30px;
+    margin-left:20px;
+}
+
+
+.footer-link{
+    font-size:34px;
+    color:#fff;
+    padding-bottom:20px;
+}
+.footer-contact{
+    color:#fff;
+    font-size:30px;
+    padding-top:90px;
+}
+
+.about-text {
+    font-size: 14px; /* Adjust the font size as needed */
+    line-height: 1.5; /* Adjust spacing between lines */
+}
+
+.left-container-2,
+.middle-container-2,
+.right-container-2 {
+    color: #98989f; /* Text color */
+}
+
+.left-container-2 h2,
+.middle-container-2 h2,
+.right-container-2 h2 {
+    font-size: 20px; /* Adjust the font size for headings */
+}
+
+.left-container-2 p,
+.middle-container-2 ul,
+.right-container-2 ul {
+    font-size: 25px; /* Adjust the font size for text */
+    line-height: 1.5; /* Add spacing between lines */
+}
+
+.middle-container-2 ul,
+.right-container-2 ul {
+    list-style-type: none; /* Remove bullet points from the list */
+}
+
+
+
+
+
+/* Add this CSS to your stylesheet or in a <style> tag in the head of your HTML document */
+
+.right-container-2 {
+    display: flex;
+    flex-direction: column;  /* Display contact items in a column */
+    margin-bottom:200px;
+    padding-bottom:50px;
+}
+
+
+.contact-item {
+    display: flex;
+    align-items: center;  /* Align icon and text horizontally */
+    margin-bottom: 20px;  /* Adjust as needed */
+    
+}
+
+.red-icons .red-icon {
+    color: red;
+    margin-right: 10px;  /* Add spacing between icon and text */
+}
+
+.contact-text {
+    margin: 0;  /* Remove default margin to align text properly */
+}
+
+
+</style>
+
+
+
+
+
+
+
+
+       
+<body>
+    <div class="bg-container">
+    <!-- Main container -->
+     <div class="main-container">
+        <!-- Left container (Mail ID and Phone Number) -->
+        <div class="left-container">
+            <div>
+               <a href="#" class="social-icons"><i class="fas fa-envelope">   hodeee@rguktn.ac.in</i></a> 
+               <a href="#" class="social-icons"><i class="fas fa-phone"> 9876543210</i></a> 
+            </div>
+        </div>
+    
+        <!-- Center container (Search Bar) -->
+        <div class="center-container">
+            <input type="text" class="search-bar" placeholder="Search...">
+        </div>
+        <div class="right-container">
+            <a href="#" class="social-icons"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.facebook.com/" target="_blank" class="social-icons"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="social-icons"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-icons"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+    <!--nav-->
+      <div class="logo-department-container">
+        <!-- College Logo -->
+        <img src="../images/RGUKT LOGO.jpeg" alt="College Logo" class="logo">
+        <div class="vertical-line"></div>
+        <!-- Department Logo -->
+        <img src="../images/EEE LOGO NUZ.jpeg" alt="Department Logo" class="logo">
+        <!-- Department Name -->
+        <div class="dept">
+            <h2 class="h-1">Electrical Engineering</h2>
+            <h1 class="h-2">RGUKT NUZVID</h1>
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-white">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mr-auto ">
+                    <li class="nav-item dropdown ">
+                        <a class="nav-link dropdown-toggle " href="#" id="navbarDropdownAbout" role="button" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            About
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownAbout">
+                            <a class="dropdown-item" href="message.html">Head's Message</a>
+                            <a class="dropdown-item" href="news.html">News</a>
+                            <a class="dropdown-item" href="event.html">Events</a>
+                            <a class="dropdown-item" href="find us.html">Find Us</a>
+                            <a class="dropdown-item" href="life @IIIT NUZ.html">Life @ IIIT Nuz</a>
+                            <a class="dropdown-item" href="awards.html">Awards</a>
+                            <a class="dropdown-item" href="gallery.html">Gallery</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownAcademics" role="button" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            Academics
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownAcademics">
+                            <a class="dropdown-item" href="../academics/courses.html">Courses</a>
+                            <a class="dropdown-item" href="../academics/BTech.html">BTech</a>
+                            
+                            <a class="dropdown-item" href="../academics/Teaching_labs.html">Teaching Labs</a>
+                            <a class="dropdown-item" href="../academics/calender.html">Calender</a>
+                            <a class="dropdown-item" href="../academics/time_table.html">Time Table</a>
+                            <a class="dropdown-item" href="../academics/placements.html">Placements</a>
+                            <a class="dropdown-item" href="../academics/co_curricular.html">Co-Curricular</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownAdmissions" role="button" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            Admissions
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownAdmissions">
+                            <a class="dropdown-item" href="../admissions/ug_admissions.html">UG Admissions</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownResearch" role="button" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            Research
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownResearch">
+                            <a class="dropdown-item" href="../research/electric_vehicles.html">Electric Vehicles</a>
+                            <a class="dropdown-item" href="../research/control_computing.html">Control and Computing</a>
+                            <a class="dropdown-item" href="../research/renewable_energy.html">Renewable Energy</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPeople" role="button" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            People
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownPeople">
+                            <a class="dropdown-item" href="../people/staff.html">Staff</a>
+                            <a class="dropdown-item" href="../people/faculty.html">Faculty</a>
+                            <a class="dropdown-item" href="../people/students.html">Students</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownInternal" role="button" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            Internal
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownInternal">
+                            <a class="dropdown-item" href="../internal/EE_webmail.html">EE Webmail</a>
+                            <a class="dropdown-item" href="../internal/IIITN_mail.html">IIITN Webmail</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+          </div>    
+
+
+          <div>
+            <img src="../images/NEWSPIC.png " alt="Carousel Image" class="img">
+            <div class="text-overlay">
+                <h2>NEWS</h2>
+                
+            </div>
+        </div>
+        <!-- Link to home page -->
+<a href="../index.html" class="home1-link">Home >>> About</a>
+<hr class="divider1">
+
+<h2 class="Latest-News">Latest News</h2>
+
+
+<div class="right-containerA">
+    <ul class="nav-options">
+        <h3 class="Quick-Links">Quick Links</h3>
+        <li><a href="message.html">Head's Message</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="event.html">Events</a></li>
+        <li><a href="find us.html">Find Us</a></li>
+        <li><a href="life @IIIT NUZ.html">Life @ IIIT NUZVID</a></li>
+        <li><a href="awards.html">Awards</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+    </ul>
+</div>
+
+
+
+
+
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="footer-box grey-box">
+        <div class="left-container-2">
+            <h1 class="footer-about">ABOUT US</h1>
+            <p class="about-text">
+                Established in 2020-2021, the RGUKT-Nuzvid Electrical and Electronics Engineering Department focuses on ICT-based learning, interdisciplinary projects, and practical applications. Join us for an innovative journey shaping the future of technology collaboratively.
+            </p>
+        </div>
+        <div class="right-container-2 red-icons">
+            <h1 class="footer-contact">Contact</h1>
+            <div class="contact-item">
+                <i class="fas fa-map-marker-alt red-icon"></i>
+                <p class="contact-text">
+                    AB-II
+                </p>
+            </div>
+            <div class="contact-item">
+                <i class="fas fa-phone red-icon"></i>
+                <p class="contact-text">
+                    98765
+                </p>
+            </div>
+            <div class="contact-item">
+                <i class="fas fa-envelope red-icon"></i>
+                <p class="contact-text">
+                    mail
+                </p>
+            </div>
+            <div class="contact-item">
+                <i class="fas fa-comment-dots red-icon"></i>
+                <p class="contact-text">
+                     Feedback
+                </p>
+            </div>
+        </div>
+        <div class="middle-container-2">
+            <h1 class="footer-link">Links</h1>
+            <ul>
+                <li>Courses</li>
+                <li>Post-Doc</li>
+                <li>PhD</li>
+                <li>Undergraduation</li>
+                <li>Postgraduation</li>
+                <li>Our History</li>
+                <li>FAQs</li>
+                <li>Find Us</li>
+            </ul>              
+        </div>
+    </div>
+    <div class="footer-box red-box">
+        <p class="footer-text">
+            About | IITNEducation | Research | Site Map | Feedback | RTI | Contact Us
+        </p>
+        <p class="copyright-text">
+            © 2023, IITN. All rights reserved.
+        </p>
+    </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+
+
+
+    </body>
+    </html>

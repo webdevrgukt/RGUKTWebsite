@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Image Carousel</title>
+<style>
+  /* Add your CSS styles here */
+  .carousel-container {
+    text-align: center;
+    margin-top: 50px;
+    overflow: hidden; /* Ensure the overflow is hidden */
+  }
+
+  .carousel-wrapper {
+    display: flex;
+    animation: moveCarousel 25s linear infinite; /* Animation for moving carousel */
+  }
+
+  .carousel {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    margin-bottom: 20px;
+    object-fit: cover;
+    border: 2px solid blue;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-right: 20px; /* Add margin between carousel items */
+  }
+
+  .info {
+    margin-bottom: 20px;
+  }
+
+  .col-4 {
+    width: 33.33%;
+    float: left;
+  }
+
+  .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  @keyframes moveCarousel {
+    0% { transform: translateX(0); }
+    16.666% { transform: translateX(0); } /* Image 1 visible for 5 seconds (1/6 of 30 seconds) */
+    20% { transform: translateX(0); } /* Pause for 2 seconds */
+    33.333% { transform: translateX(-100%); } /* Image 1 transition out, Image 2 transition in */
+    50% { transform: translateX(-100%); } /* Image 2 visible for 5 seconds */
+    54% { transform: translateX(-100%); } /* Pause for 2 seconds */
+    66.666% { transform: translateX(-200%); } /* Image 2 transition out, Image 3 transition in */
+    83.333% { transform: translateX(-200%); } /* Image 3 visible for 5 seconds */
+    87% { transform: translateX(-200%); } /* Pause for 2 seconds */
+    100% { transform: translateX(0); } /* Image 3 transition out, Image 1 transition in */
+  }
+</style>
+</head>
+<body>
+  <div class="carousel-container">
+    <h2>Faculty Details</h2>
+    <div class="carousel-wrapper">
+      <div class="col-4">
+        <img src="1.jpg.crdownload" alt="Image 1" class="carousel">
+        <div class="info">
+          <p>NMs. P.Mythili<br>
+             Assistant Professo<br>
+            mythili.p@rguktn.ac.in</p>
+        </div>
+      </div>
+      <!-- Repeat the images -->
+      <div class="col-4">
+        <img src="2.jpg.crdownload" alt="Image 2" class="carousel">
+        <div class="info">
+            <p>NMs. P.Mythili<br>
+                Assistant Professo<br>
+               mythili.p@rguktn.ac.in</p>
+        </div>
+      </div>
+      <div class="col-4">
+        <img src="3.jpg.crdownload" alt="Image 2" class="carousel">
+        <div class="info">
+            <p>NMs. P.Mythili<br>
+                Assistant Professo<br>
+               mythili.p@rguktn.ac.in</p>
+        </div>
+      </div>
+      <div class="col-4">
+        <img src="4.jpg.crdownload" alt="Image 2" class="carousel">
+        <div class="info">
+            <p>NMs. P.Mythili<br>
+                Assistant Professo<br>
+               mythili.p@rguktn.ac.in</p>
+        </div>
+      </div>
+      <div class="col-4">
+        <img src="5.jpg.crdownload" alt="Image 2" class="carousel">
+        <div class="info">
+            <p>NMs. P.Mythili<br>
+                Assistant Professo<br>
+               mythili.p@rguktn.ac.in</p>
+        </div>
+      </div>
+      <div class="col-4">
+        <img src="6.jpg.crdownload" alt="Image 2" class="carousel">
+        <div class="info">
+            <p>NMs. P.Mythili<br>
+                Assistant Professo<br>
+               mythili.p@rguktn.ac.in</p>
+        </div>
+      </div>
+      <div class="col-4">
+        <img src="8.jpg.crdownload" alt="Image 2" class="carousel">
+        <div class="info">
+            <p>NMs. P.Mythili<br>
+                Assistant Professo<br>
+               mythili.p@rguktn.ac.in</p>
+        </div>
+      </div>
+      <div class="col-4">
+        <img src="9.jpg.crdownload" alt="Image 3" class="carousel">
+        <div class="info">
+            <p>NMs. P.Mythili<br>
+                Assistant Professo<br>
+               mythili.p@rguktn.ac.in</p>
+        </div>
+      </div>
+      <div class="col-4">
+        <img src="1.jpg.crdownload" alt="Image 1" class="carousel">
+        <div class="info">
+          <p>NMs. P.Mythili<br>
+             Assistant Professo<br>
+            mythili.p@rguktn.ac.in</p>
+        </div>
+      </div>
+      <!-- Repeat the images -->
+      <div class="col-4">
+        <img src="2.jpg.crdownload" alt="Image 2" class="carousel">
+        <div class="info">
+            <p>NMs. P.Mythili<br>
+                Assistant Professo<br>
+               mythili.p@rguktn.ac.in</p>
+        </div>
+      </div>
+      <div class="col-4">
+        <img src="3.jpg.crdownload" alt="Image 2" class="carousel">
+        <div class="info">
+            <p>NMs. P.Mythili<br>
+                Assistant Professo<br>
+               mythili.p@rguktn.ac.in</p>
+        </div>
+      </div>
+      <div class="col-4">
+        <img src="4.jpg.crdownload" alt="Image 2" class="carousel">
+        <div class="info">
+            <p>NMs. P.Mythili<br>
+                Assistant Professo<br>
+               mythili.p@rguktn.ac.in</p>
+        </div>
+      </div>
+      <!-- Repeat the images -->
+    </div>
+  </div>
+</body>
+</html>

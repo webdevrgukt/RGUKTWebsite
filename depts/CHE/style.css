@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+    padding: 0;
+  }
+
+  nav {
+    background-image: url('navbar_bg.jpg');
+    background-size: cover;
+    padding: 20px 0;
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  .logo img {
+    max-height: 50px;
+  }
+
+  .nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Change to flex to make it horizontal */
+  }
+
+  .nav-links li {
+    margin-right: 20px;
+  }
+
+  .nav-links li a {
+    color: white;
+    text-decoration: none;
+  }
+
+  .nav-links li a:hover {
+    color: lightgray;
+  }

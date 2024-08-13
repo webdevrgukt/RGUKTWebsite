@@ -1,0 +1,162 @@
+*{
+    margin:0;
+    padding:0;
+    flex-shrink: 0;
+}
+/*html{
+    height:768px;
+    width:1366px;
+} */
+body{
+    height:100%;
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+header{
+    height:14vh;
+    width:100%;
+    /* padding: 1em 0 1em 0; */
+    background-color: rgba(224, 223, 223,0.9);
+}
+#title{
+    height:100%;
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+    align-items: center;
+}
+#title{
+    height:100%;
+    width: 100%;
+    display: flex;justify-content: center;align-items: center;
+    background:url("rguktlogo.png");
+    background-size: 10vh auto;
+    background-repeat: no-repeat;
+    background-position: 30%;
+    /* font-size: 2em; */
+}
+nav{
+    height:5vh;
+    width:100%;
+    background: transparent;
+    box-shadow:  0px 2px 2px 2px rgba(0,0,0,0.1);
+}
+nav ol{
+    height:100%;
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: space-evenly;
+}
+nav ol li{
+    height:100%;
+    background: transparent;
+    display: flex;justify-content: center;align-items:center ;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* -------nav menus------- */
+item:hover, menu_two a:hover{
+	color:black;
+	border-left: 2px solid red;
+}
+nav *{
+	z-index: 30;
+}
+menu_one,menu_two{
+    /* border:1px solid black; */
+    padding-top: 5px;
+    /*  */
+	display:none;
+	position:absolute;
+	left:auto;
+    cursor: pointer;
+}
+
+item, menu_two a{
+	height:inherit;
+	width:100%;
+	border-bottom: 1px solid white;
+	padding: 0.5em 0em 0.5em 0em;
+	text-align: center;
+	color:black;
+    text-decoration: none;
+}
+
+item{
+    background:rgb(246, 245, 245);
+}
+#navol li:hover menu_one{
+	height:auto;width:100px;
+	top:19vh;
+	display: flex;flex-direction: column;
+    background: transparent !important;
+}
+menu_one item:hover menu_two{
+	height:auto;width:130px;
+	top:15px;left:101%;
+	display: flex;flex-direction: column;
+	background:rgb(246, 245, 245);
+}
+
+/* -------DEPT INFO------- */
+
+main{
+    padding-top:2em;
+    height: 65vh;
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#left, #right{
+    height:100%;
+    width:50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#left div img{
+    height:20vh;
+    aspect-ratio: 1/1;
+    box-shadow: -3px -2px 5px 3px rgba(224, 223, 223,1);
+    border-radius: 5px;
+}
+/*#left *{border:1px solid black;}*/
+#left>div{
+    height:50%;
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+#left hr,#right hr{
+    width:60%;
+    margin: 1em 0 1em 0;
+}
+#right{
+    height: 100%;
+    width:50%;
+}
+#right h2{
+    color:maroon;
+}
+/* ----------------- */
+
+footer{
+    color:white;
+    height: 12vh;
+    width:100%;
+    display: flex;justify-content: center;align-items: center;
+    background: rgb(43, 43, 43);
+}
+

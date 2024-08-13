@@ -1,0 +1,494 @@
+.body,html{
+    margin:0;
+    padding:0;
+    height:100vh;
+    
+   
+}
+.bg-container{
+    
+    height:100vh;
+    width:100%;
+   
+
+}
+
+.style-1{
+    color:#fff;
+    padding:10px;
+    font-size:14px;
+    font-weight: 400;
+    font-family:"Work Sans",sans-serif;
+    cursor : pointer;
+    line-height: 2.3;
+    display: inline-block;
+    padding-left: 5px;
+}
+
+
+
+ /* Main container */
+ .main-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height:50px;
+    padding: 10px;
+    background-color:#d83643;
+}
+
+/* Left container (Mail ID and Phone Number) */
+.left-container {
+    display: flex;
+    align-items: center;
+    margin-left:15px;
+}
+
+/* Center container (Search Bar) */
+.center-container {
+    flex-grow: 1;
+    text-align: center;
+}
+
+/* Right container (Social Icons) */
+.right-container-1{
+    display: flex;
+    margin-left:60px;
+    align-items: center;
+    margin-left:90px;
+}
+
+/* Style for the search bar */
+.search-bar {
+    width: 70%; /* Adjust the width as needed */
+    padding: 8px;
+    
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Style for the social icons */
+.social-icons {
+    font-size: 18px; /* Adjust the font size as needed */
+    margin-right: 20px; /* Adjust the margin between icons */
+    color: white; /* Adjust the color of the icons */
+}
+
+
+.logo-department-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    height: 100px;
+    background-color: #fff;
+    margin-left: 30px;
+}
+
+.dept {
+    width: 500px;
+}
+
+.h-1 {
+    padding-right: 40px;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.h-2 {
+    font-weight: 200;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Logo styles */
+.logo {
+    max-width: 80px;
+    margin-right: 10px;
+    height: 75px;
+    border: none;
+    box-shadow: none;
+    vertical-align: middle;
+}
+
+.vertical-line {
+    height: 80px;
+    width: 4px;
+    background-color: #ccc;
+    margin: 0 10px;
+}
+
+/* Navbar styles */
+.navbar {
+    background-color: #fff;
+    padding: 10px;
+    margin-right: 30px;
+    
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+/* Navbar link styles */
+.navbar-nav .nav-item .nav-link {
+    color: #004495;
+    font-weight: 900;
+    font-size: 14px;
+    margin-left:40px;
+    padding: 10px;
+    border-radius: 4px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar-nav .nav-item .nav-link:hover,
+.navbar-nav .nav-item .nav-link:focus {
+    background-color: #f8f9fa;
+}
+
+
+.carousel {
+    width: 100%;
+    
+}
+
+.slick-slide img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover; /* Maintain image aspect ratio while covering the entire slide */
+}
+
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-container,
+.middle-container,
+.right-container {
+    flex: 1;
+    padding: 20px;
+}
+
+.news-container {
+    margin-right: 200px;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 20px;
+    width:400px;
+}
+
+.news-item {
+    border: 2px solid #ccc;
+    width:450px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.news-item img {
+    width: 200px;
+    height: 200px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+}
+.Read{
+    margin-left: 10px;
+    margin-bottom:30px;
+}
+
+.events-container {
+    text-align: center;
+    margin-right:100px;
+}
+
+.spotlights-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.spotlight {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    background-color: #f0f0f0; /* Grey background */
+    padding: 20px;
+    width:200px;
+    border-radius: 10px;
+}
+
+.spotlight img {
+    border: 2px solid #ff6347; /* Reddish border */
+    border-bottom:none;
+    border-right :none;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+.spotlight p {
+    font-size:14px;
+    margin: 0;
+}
+
+/* container -count*/
+.container-count {
+    background-color:#d83643;
+    height:150px;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    margin-bottom: 20px; 
+  }
+  
+
+
+  .item {
+    display: flex;
+    align-items: center;
+    color:#fff;
+    
+    font-size:24px;
+    font-family: "Work Sans",sans-serif;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.num {
+    font-weight:bold;
+    font-size: 65px; /* Adjust as needed */
+    font-family: "Work Sans",sans-serif;
+    color:#fff;
+    padding-bottom: 5px;
+    
+}
+
+.sup-1 {
+    font-size: 25px; /* Adjust as needed */
+    vertical-align: top;
+    color:#004495;
+}
+
+  .vertical-line-1 {
+    height: 140px; /* Adjust the height of the line */
+    width: 2px;
+    background-color: #fff;
+    margin: 0 10px; /* Adjust the margin between the line and images */
+}
+
+/* Add this to your existing CSS file or create a new one */
+.footer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px; /* Stack the boxes vertically */
+}
+
+.footer-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.grey-box {
+    height: 400px; /* Adjust the height of the grey box */
+    background-color:#3a3a3b;
+    display: flex;
+    
+    justify-content: space-between; /* Space between the three containers */
+    align-items: center;
+    padding: 20px; /* Add padding for space */
+}
+
+.red-box {
+    height: 50px; /* Adjust the height of the red box */
+    background-color: #d83643;
+    display: flex;
+    justify-content: space-between; /* Add space between text and copyright */
+    align-items: center;
+}
+
+.footer-text,
+.copyright-text {
+    color: white;
+    font-size: 18px; /* Adjust the font size as needed */
+    margin: 0; /* Remove default margin */
+    padding-left: 20px; /* Add padding to start from the left */
+}
+
+.about-section {
+    color: #98989f; /* Text color */
+    padding: 20px; /* Add padding for space */
+}
+
+.left-container-2 {
+    color: #98989f; /* Text color */
+    display:flex;
+    flex-direction: column;
+    width:400px;
+}
+
+.footer-about{
+    color:#fff;
+    font-size:30px;
+    margin-left:20px;
+}
+
+
+.footer-link{
+    font-size:34px;
+    color:#fff;
+    padding-bottom:20px;
+}
+.footer-contact{
+    color:#fff;
+    font-size:30px;
+    padding-top:90px;
+}
+
+.about-text {
+    font-size: 14px; /* Adjust the font size as needed */
+    line-height: 1.5; /* Adjust spacing between lines */
+}
+
+.left-container-2,
+.middle-container-2,
+.right-container-2 {
+    color: #98989f; /* Text color */
+}
+
+.left-container-2 h2,
+.middle-container-2 h2,
+.right-container-2 h2 {
+    font-size: 20px; /* Adjust the font size for headings */
+}
+
+.left-container-2 p,
+.middle-container-2 ul,
+.right-container-2 ul {
+    font-size: 25px; /* Adjust the font size for text */
+    line-height: 1.5; /* Add spacing between lines */
+}
+
+.middle-container-2 ul,
+.right-container-2 ul {
+    list-style-type: none; /* Remove bullet points from the list */
+}
+
+
+
+
+
+/* Add this CSS to your stylesheet or in a <style> tag in the head of your HTML document */
+
+.right-container-2 {
+    display: flex;
+    flex-direction: column;  /* Display contact items in a column */
+    margin-bottom:200px;
+    padding-bottom:50px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;  /* Align icon and text horizontally */
+    margin-bottom: 20px;  /* Adjust as needed */
+    
+}
+
+.red-icons .red-icon {
+    color: red;
+    margin-right: 10px;  /* Add spacing between icon and text */
+}
+
+.contact-text {
+    margin: 0;  /* Remove default margin to align text properly */
+}
+
+/* Add this CSS after the previous CSS rules */
+
+
+
+
+
+/* Add the new CSS rules here */
+.image-text-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.left {
+    display:flex;
+    flex-direction:column;
+    width: 45%;
+}
+
+.right {
+    width: 45%;
+}
+
+
+.gallery-heading {
+    font-size: 30px;
+    font-weight: bold;
+    margin-top:20px;
+    margin-bottom: 80px;
+    margin-left:50px;
+}
+
+.image-descriptions {
+    list-style-type:circle ;
+    padding: 0;
+    margin-left: 60px;
+    font-size: 18px;
+    
+}
+
+
+.image-descriptions li {
+    margin-bottom: 10px;
+}
+
+.bulleted-lines {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.animation-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.up-row,
+.down-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.animated-image {
+    width: 48%;
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s ease-in-out; /* Add the transition effect */
+}
+
+/* Add hover effect to the images */
+.animated-image:hover {
+    transform: scale(1.1); /* Scale up on hover */
+}
+
+
+
+
+
+
+
+
+
+
+  

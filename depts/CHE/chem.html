@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Navigation Bar</title>
+  <style>
+    nav {
+      background-color: powderblue; /* Set the background color of the navigation bar */
+    }
+
+    nav ul {
+      list-style-type: none; /* Remove default bullets from the list */
+      margin: 0;
+      padding: 0;
+      display: flex; /* Use flexbox to control layout */
+      justify-content: space-between; /* Space out the items evenly */
+      align-items: center; /* Align items vertically */
+    }
+
+    nav ul.vertical {
+      flex-direction: column; /* Display list items vertically */
+      align-items: center; /* Center-align the items horizontally */
+    }
+
+    nav ul li {
+      margin-right: 20px; /* Add spacing between navigation items */
+    }
+
+    .horizontal {
+      display: inline-block; /* Display list items inline */
+      margin: 0 5px; /* Add margin to create space between items */
+      padding: 1px; /* Reset padding */
+    }
+
+    nav ul li a {
+      display: flex; /* Use flexbox to align items */
+      align-items: center; /* Center-align the items vertically */
+      color: black;
+      text-decoration: none;
+      padding: 10px 15px; /* Add padding to the links */
+      font-size:larger;
+    }
+
+    nav ul li a:hover {
+      background-color: #555; /* Change background color on hover */
+    }
+
+    .logo {
+      display: flex; /* Use flexbox to align items */
+      align-items: center; /* Center-align the items vertically */
+      color: white;
+      text-decoration: none;
+    }
+
+    .logo img {
+      height: 100px; /* Adjust the height of the logo image */
+      margin-right: 0; /* Remove right margin */
+      margin-bottom: 0;
+    }
+
+    .logo span {
+      margin-bottom: 8px;
+      margin-right: 10px;
+      padding-right: 100px;
+      color:black;
+      text-align: center;
+    }
+
+    table {
+      border-collapse: collapse; /* Collapse table borders */
+      width: 25%; /* Set table width */
+      float: left; /* Float the table to the left */
+      margin-left:78px;
+    }
+
+    th, td {
+      border: 1px solid black; /* Add border to cells */
+      padding: 8px; /* Add padding to cells */
+      text-align: left; /* Align text to the left */
+    }
+
+    td {
+      width: 150px; /* Set width for table cells */
+      background-color: skyblue;
+      cursor: pointer; /* Change cursor to pointer when hovering over cells */
+    }
+
+    td:hover {
+      background-color: red;
+    }
+
+    .chem img {
+      border: 2px solid black; /* Add border to the image */
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+    }
+
+    #aboutContent {
+      margin-left: 450px; /* Add margin to separate from the table */
+      display: none;
+    }
+
+    hr {
+      border-color: red; /* Change color to red */
+    }
+
+    .row {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .col-md-3 {
+      margin-top: 20px; /* Adjust margin as needed */
+    }
+    .chemhod img {
+        width: 150px; /* Example width */
+        height: 150px;
+        border: 5px solid yellow;
+        margin-left: 20px; /* Adjusted margin */
+    }
+    .info {
+        font-size: 14px;
+        margin-top: 5px;
+        text-align: center;
+    }
+  .about-container {
+  border: 2px solid black;
+  padding: 20px;
+}
+.about-container1 img {
+        width: 1px; /* Set the width of the image */
+        height: 1px; /* Set the height of the image */
+        border: 2px solid black; /* Add a border to the image */
+        border-left: none; /* Remove the left border */
+        border-radius: 50%; /* Make the image rounded */
+        float: left; /* Float the image to the left */
+        margin-right: 10px; /* Add some margin to the right of the image */
+    }
+    footer {
+            background-color: red; /* Set the background color of the footer */
+            text-align: center; /* Center-align the text */
+            padding: 5px; /* Add some padding for better spacing */
+            color: white; /* Set text color to white for better contrast */
+        }
+        .search-bar {
+            display: inline-block;
+            position: relative;
+        }
+
+        .search-bar input[type="text"] {
+            padding: 5px 10px;
+            border: none;
+            border-radius: 20px;
+        }
+
+        .search-bar button {
+            position: absolute;
+            top: 50%;
+            right: 10px;
+            transform: translateY(-50%);
+            border: none;
+            background-color: transparent;
+            cursor: pointer;
+        }
+
+  </style>
+</head>
+<body>
+
+<nav>
+  <ul class="vertical">
+    <li class="vertical">
+      <a class="logo" href="#">
+        <img src="lo.png" alt="Logo"> <!-- Replace "your-logo.png" with the path to your logo image -->
+        <span><h3>Rajiv Gandhi University of Knowledge Technologies.<br><style="align:center"></style>RGUKT NUzvid Campus<br>Indian Institute of Information Technology</h3></span>
+      </a>
+    </li>
+  </ul>
+  <ul>
+    <li class="horizontal">
+      <a href="#">
+        <i class="fa fa-home" style="margin-right: 5px;"></i> <!-- Add home icon -->
+        Home
+      </a>
+    </li>
+    <li class="horizontal"><a href="#">About</a></li>
+    <li class="horizontal"><a href="#">Contact</a></li>
+    <li class="horizontal"><a href="#">Research</a></li>
+    <li class="horizontal"><a href="#">Events</a></li>
+    <li class="horizontal"><a href="#">Academics</a></li>
+    <li class="horizontal"><a href="#">Home</a></li>
+    <li class="horizontal"><a href="#">About</a></li>
+  </ul>
+</nav>
+<hr>
+ <!-- Your department description and quick links here -->
+ <div class="chem">
+    <img src="chemical.jpg">
+    <!-- Paste the second HTML code snippet here -->
+    <br>
+    <br>
+    <div>
+    <table>
+      <tr>
+        <td onclick="toggleAbout()">About</td>
+      </tr>
+      <tr>
+        <td>Academic Programmes</td>
+      </tr>
+      <tr>
+        <td>People</td>
+      </tr>
+      <tr>
+        <td>Notable Alumni</td>
+      </tr>
+      <tr>
+        <td>Students Society</td>
+      </tr>
+      <tr>
+        <td>Academic Research Group</td>
+      </tr>
+      <tr>
+        <td>Awards and Honours</td>
+      </tr>
+      <tr>
+        <td>Laboratory & Facilities</td>
+      </tr>
+      <tr>
+        <td>Photo Gallery</td>
+      </tr>
+    </table>
+    </div>
+    <div id="aboutContent">
+      <!-- Content to display when "About" is clicked -->
+      Welcome to the Department of Chemical Engineering, a hub of innovation and transformation since 1964. The department offers a diverse array of academic programs, including B.Tech., M.Tech., and Ph.D., designed to meet industry demands and attract top talent. Our accomplished faculty, blending experience and youth, excel in teaching and groundbreaking research. The laboratories equipped with state-of-the-art facilities support experiential learning and industry-aligned curriculum.
+
+          We bridge theory and practice through research initiatives and collaborations with leading industries. Our alumni hold key positions globally, reflecting our commitment to shaping influential leaders. We've reached milestones like our Golden Jubilee in 2014–15 and hosted renowned international conferences. The department garnered accolades over the years, including a prestigious 5-year accreditation from the National Board of Accreditation (NBA) for the B.Tech. program in 2015, subsequently another 6-year accreditation in 2022, affirming our dedication to excellence. Our M.Tech. program also earned a similar 5-year accreditation in 2016, emphasizing our commitment to providing world-class education.
+          
+          The department has evolved from an initial intake of 30 students to the current capacity of 126 in B.Tech, with dynamic specializations in tune with industry trends in M.Tech and a well-funded PhD program. We support PMRF fellowships, QIP, industry-sponsored PhD scholars, and post-doctoral fellows. Our state-of-the-art building, complete with green ambience and aesthetic landscaping, stands as a symbol of architectural elegance.
+          
+          Welcome to the world of chemical engineering, where intellectual rigor, experiential learning, and industry engagement come together. Join us as we push the boundaries of what's possible and continue redefining the art and science of chemical engineering."</p>
+          <div class="about-container">
+           <div class="container">
+            <div class="row">
+              <div class="col-8">
+                <div class="about-container1">
+                  <div style="text-align: center;">
+                    <img src="vision-removebg-preview.png" alt="mission Image" style="width: 100px; height: auto; float: left; margin-right: 10px;">
+                    <b style="display: block; text-align: center; color: red;">VISION</b>
+                  </div>
+                  <div>
+                      
+                      <p style="text-align: center;">
+                          To attain global recognition in research and training students for meeting the challenging needs of chemical & allied industries and society.
+                      </p>
+                  </div>
+              </div>
+              
+                  </div>
+                  <div class="col-4">
+                    <div class="about-container2">
+                      <div style="text-align: center;">
+                        <img src="mission.png" alt="Mission Image" style="width: 100px; height: auto; float: left; margin-right: 10px; border-radius: 50%;">
+
+                        <b style="display: block; text-align: center; color: red;">MISSION</b>
+                      </div>
+                      <div>
+                        <p style="text-align: center;">
+                      Providing high quality undergraduate and graduate education in tune with changing needs of industry.
+                      </p>
+
+Generating knowledge and developing technology through quality research in frontier areas of chemical and interdisciplinary fields.
+
+Fostering industry-academia relationship for mutual benefit and growth.
+                      </div>
+                      </div>
+                      </div>
+           </div>
+          </div>
+    </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-3">
+      <div class="chemhod">
+      <img src="hodchem'.jpg">
+      <div class="info">
+        <p>Ramakrishna<br>
+          Head of the Department<br>
+          chemical_hod@nitw.ac.in<br>
+          9490165346</p>
+      </div>
+    </div>
+    </div>
+  </div>
+</div>
+ </div>
+ <footer>
+  
+      <select>
+          <option value="all">All Languages</option>
+          <option value="english">English</option>
+          <option value="spanish">Spanish</option>
+          <option value="french">French</option>
+          <!-- Add more options as needed -->
+      </select>
+      
+
+  <p>&copy; 2024 Your Company. All rights reserved.</p>
+</footer>
+
+<script>
+    function toggleAbout() {
+      var aboutContent = document.getElementById('aboutContent');
+      aboutContent.style.display = (aboutContent.style.display === 'none') ? 'block' : 'none';
+    }
+  </script>
+    <script>
+        // Function to change language based on user selection
+        function changeLanguage(language) {
+            // Implement translation logic here
+            // For demonstration purposes, let's assume we have translated content for each language
+            if (language === "english") {
+                // Replace content with English translations
+                document.getElementById("header").innerText = "Welcome to My Website";
+                document.getElementById("about").innerText = "About Us";
+                // Add translations for other elements as needed
+            } else if (language === "spanish") {
+                // Replace content with Spanish translations
+                document.getElementById("header").innerText = "Bienvenido a Mi Sitio Web";
+                document.getElementById("about").innerText = "Sobre Nosotros";
+                // Add translations for other elements as needed
+            }
+            // Add translations for other languages as needed
+        }
+    
+  </script>
+</body>
+</html>
